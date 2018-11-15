@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[MainWindow.xaml](./CS/CustomTreeViewComboBox/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/CustomTreeViewComboBox/MainWindow.xaml.vb))**
+* [MainWindow.xaml.cs](./CS/CustomTreeViewComboBox/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomTreeViewComboBox/MainWindow.xaml.vb))
+<!-- default file list end -->
 # Implement a custom drop-down editor with TreeView as PopupContent
 
 
