@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WPF LookUpEdit - Display a TreeList as a Popup Content
+# WPF LookUpEdit - Display a TreeList as Popup Content
 
 This example displays hierarchical data in the [LookUpEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.LookUp.LookUpEdit)'s popup.
 
@@ -14,7 +14,7 @@ This example displays hierarchical data in the [LookUpEdit](https://docs.devexpr
 
 ![image](https://user-images.githubusercontent.com/65009440/186915700-96577a48-c76d-47fb-9fe2-2501ffb772b8.png)
 
-## Files to Look at
+## Files to Look At
 
 * [MainWindow.xaml](./CS/CustomTreeViewComboBox/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomTreeViewComboBox/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/CustomTreeViewComboBox/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomTreeViewComboBox/MainWindow.xaml.vb))
