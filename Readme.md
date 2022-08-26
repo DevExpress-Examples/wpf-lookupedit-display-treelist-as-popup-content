@@ -3,46 +3,29 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3106)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* **[MainWindow.xaml](./CS/CustomTreeViewComboBox/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomTreeViewComboBox/MainWindow.xaml))**
+# WPF LookUpEdit - Display a TreeList as a Popup Content
+
+This example displays hierarchical data in the [LookUpEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.LookUp.LookUpEdit)'s popup.
+
+1. Use the [PopupBaseEdit.PopupContentTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.PopupBaseEdit.PopupContentTemplate) property to specify a custom [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl).
+2. Assign an instance of the [TreeListView](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView) class to the [GridControl.View](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.View) property.
+3. Set the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)'s name to **PART_GridControl**.
+
+![image](https://user-images.githubusercontent.com/65009440/186915700-96577a48-c76d-47fb-9fe2-2501ffb772b8.png)
+
+## Files to Look at
+
+* [MainWindow.xaml](./CS/CustomTreeViewComboBox/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomTreeViewComboBox/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/CustomTreeViewComboBox/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomTreeViewComboBox/MainWindow.xaml.vb))
-<!-- default file list end -->
-# Implement a custom drop-down editor with TreeView as PopupContent
 
+## Documentation
 
-<p>Show how to implement a custom ComboBoxEdit with TreeView as a PopupContent and use it inside DXGrid as a custom column.</p><br />
-<p><strong>Update (</strong><strong>version </strong><strong>13.1</strong><strong>):</strong></p><br />
-<p>We've modified this code example by using the DevExpress control version 13.1. There is no need to create custom classes to resolve this problem.</p><p>You can accomplish this task by using the Grid control in the TreeView mode as a popup content template of the LookUpEdit control. </p><p>This way is more efficient and clear than the way used in this example for old versions of DevExpress controls. </p><br />
-<p>Here is a snippet of the markup file:</p>
+* [LookUpEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.LookUp.LookUpEdit)
+* [TreeListView](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView)
+* [PopupBaseEdit.PopupContentTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.PopupBaseEdit.PopupContentTemplate)
 
-```xaml
-        <dxg:LookUpEdit Name="lookUpEdit" VerticalAlignment="Top" Width="350" Margin="50,37,67,0"
-                        DisplayMember="Name">
-            <dxg:LookUpEdit.PopupContentTemplate>
-                <ControlTemplate>
-                    <dxg:GridControl x:Name="PART_GridControl" AutoGenerateColumns="AddNew">
-                        <dxg:GridControl.Columns>
-                            <dxg:GridColumn FieldName="Name" Header="Employee Name" />
-                            <dxg:GridColumn FieldName="Position" />
-                            <dxg:GridColumn FieldName="Department" />
-                        </dxg:GridControl.Columns>
-                        <dxg:GridControl.View>
-                            <dxg:TreeListView Name="treeListView1" AutoWidth="True"
-                                  KeyFieldName="ID" ParentFieldName="ParentID"
-                                  TreeDerivationMode="Selfreference"/>
-                        </dxg:GridControl.View>
-                    </dxg:GridControl>
-                </ControlTemplate>
-            </dxg:LookUpEdit.PopupContentTemplate>
-        </dxg:LookUpEdit>
+## More Examples
 
-
-```
-
-
-
-<br/>
-
-
+* [WPF LookUpEdit - Customize the Embedded Data Grid](https://github.com/DevExpress-Examples/wpf-lookupedit-customize-the-embedded-data-grid)
+* [WPF LookUpEdit - Process New Values](https://github.com/DevExpress-Examples/lookupedit-processing-new-values-e2646)
