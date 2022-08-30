@@ -12,7 +12,7 @@ This example displays hierarchical data in the [LookUpEdit](https://docs.devexpr
 2. Assign an instance of the [TreeListView](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView) class to the [GridControl.View](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.View) property.
 3. Set the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)'s name to **PART_GridControl**.
 
-![image](https://user-images.githubusercontent.com/65009440/186915700-96577a48-c76d-47fb-9fe2-2501ffb772b8.png)
+![image](https://user-images.githubusercontent.com/65009440/186915700-96577a48-c76d-47fb-9fe2-2501ffb772b8.png) 
 
 ## Files to Look At
 
