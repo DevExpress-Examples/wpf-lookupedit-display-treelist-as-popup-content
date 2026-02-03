@@ -7,8 +7,8 @@ Namespace CustomTreeViewComboBox
         Inherits Window
 
         Public Sub New()
-            Me.InitializeComponent()
-            Me.lookUpEdit.ItemsSource = GetStaff()
+            InitializeComponent()
+            lookUpEdit.ItemsSource = GetStaff()
         End Sub
     End Class
 
